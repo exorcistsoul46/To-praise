@@ -1,0 +1,118 @@
+/* Apply Poppins font globally */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, hotpink, white);
+    text-align: center; 
+}
+
+/* GIF */
+#cutehello {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Universal Button Styling */
+button {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px black; /* Default shadow */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+button:hover {
+    transform: translateY(-4px); /* Moves button up for 3D effect */
+    box-shadow: 6px 6px 0px black; /* Darker & bigger shadow */
+}
+
+
+/* First Page */
+.first-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+/* Second Page */
+.second-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Third Page */
+.third-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Text Styling with Dark Pink + Black Glow */
+#message, #finalMessage {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: cursive;
+    color: whitesmoke;
+    text-shadow: 2px 2px 6px rgba(199, 21, 133, 0.8), 
+                 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #cutehello {
+        width: 150px;
+        height: 150px;
+        top: 10px;
+    }
+
+    button {
+        width: 130px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    #message, #finalMessage {
+        font-size: 22px;
+    }
+}
